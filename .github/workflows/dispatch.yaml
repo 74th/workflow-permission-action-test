@@ -11,6 +11,7 @@ jobs:
         id: hello
         uses: 74th/workflow-permission-action@master
         with:
-          users: "74th"
+          users: 76th
+          teams: 75th
       - name: deploy
         run: echo "deployed"
