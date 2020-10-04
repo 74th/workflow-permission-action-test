@@ -13,6 +13,6 @@ jobs:
         uses: 74th/workflow-permission-action@master
         with:
           users: 76th
-          listfile: .github/workflows/enables.txt
+          listfile: .github/workflows/enables.txtt
       - name: deploy
         run: echo "deployed"
