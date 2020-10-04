@@ -7,13 +7,12 @@ jobs:
     runs-on: ubuntu-20.04
     name: deploy test
     steps:
+      - uses: actions/checkout@v2
       - name: Hello world action step
         id: hello
         uses: 74th/workflow-permission-action@master
         with:
           users: 76th
-          teams: 75th
-        env:
-          GITHUB_TOKEN: ${{ secrets.ORG_READ_TOKEN }}
+          listfile: .github/workflows/enables.txt
       - name: deploy
         run: echo "deployed"
