@@ -8,7 +8,7 @@ jobs:
     name: deploy test
     steps:
       - uses: actions/checkout@v2
-      - name: Hello world action step
+      - name: check user permission
         id: hello
         uses: 74th/workflow-permission-action@master
         with:
