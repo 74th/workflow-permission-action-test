@@ -9,7 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: check user permission
-        id: hello
         uses: 74th/workflow-permission-action@master
         with:
           users: 76th
