@@ -1,0 +1,15 @@
+on:
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    name: deploy test
+    steps:
+      - name: Hello world action step
+        id: hello
+        uses: 74th/workflow-permission-action@master
+        with:
+          users: "75th"
+      - name: deploy
+        run: echo "deployed"
