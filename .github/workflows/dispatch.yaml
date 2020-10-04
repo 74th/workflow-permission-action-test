@@ -13,5 +13,7 @@ jobs:
         with:
           users: 76th
           teams: 75th
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: deploy
         run: echo "deployed"
